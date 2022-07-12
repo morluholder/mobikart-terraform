@@ -84,7 +84,7 @@ resource "aws_route_table" "private-mobikart-RT" {
 
 }
 
-# Associate Public Route Table with Private Subnet
+# Associate Private Route Table with Private Subnet
 resource "aws_route_table_association" "private-mobikart-SN1-association" {
   subnet_id      = aws_subnet.private-mobikart-SN1.id
   route_table_id = aws_route_table.private-mobikart-RT.id

@@ -1,1 +1,0 @@
-# mobikart-terraform
